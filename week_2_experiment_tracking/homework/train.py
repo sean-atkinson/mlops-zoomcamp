@@ -7,10 +7,8 @@ from sklearn.metrics import mean_squared_error
 
 import mlflow
 
-
-mlflow.set_tracking_uri("sqlite:///mlflow.db")
-mlflow.set_experiment("homework")
-
+mlflow.set_tracking_uri("http://127.0.0.1:5000")
+mlflow.set_experiment("assignment")
 
 def load_pickle(filename: str):
     with open(filename, "rb") as f_in:
@@ -19,11 +17,12 @@ def load_pickle(filename: str):
 
 def run(data_path):
 
+    mlflow.sklearn.autolog()
+
     X_train, y_train = load_pickle(os.path.join(data_path, "train.pkl"))
     X_valid, y_valid = load_pickle(os.path.join(data_path, "valid.pkl"))
 
-    mlflow.sklearn.autolog()
-    
+
     rf = RandomForestRegressor(max_depth=10, random_state=0)
     rf.fit(X_train, y_train)
     y_pred = rf.predict(X_valid)
