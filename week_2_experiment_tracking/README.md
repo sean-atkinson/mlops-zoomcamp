@@ -49,16 +49,3 @@ difference between using Jupyter with VS code and without
 ## 2.6 MLflow in practice
 
 COMING SOON
-
-
-
-## 2.7 Homework
-
-More information here: [homework.md](homework.md)
-
-
-## Notes
-
-Did you take notes? Add them here:
-
-* Send a PR, add your notes above this line
