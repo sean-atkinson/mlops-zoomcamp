@@ -1,5 +1,7 @@
 Training a simple model to predict trip duration using [NYC taxi trip record data](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
 
+[Notebook](https://github.com/sean-atkinson/mlops-zoomcamp/blob/main/week_1/week1_hw.ipynb) with my work.
+
 ## Q1. Downloading the data
 
 We'll use [the same NYC taxi dataset](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page),
